@@ -1,3 +1,2 @@
 # meu-primeiro-repo
-Teste para entender o Github
-teste teste teste
+Esse repositório tem como objetivo trazer uma espécie de portifólio para testar o GitHub
