@@ -1,7 +1,7 @@
 // Lista de mapas — adicione entradas aqui para novos mapas
 const maps = [
-  { id: "map1", title: "Mapa de Exemplo 1", description: "Mapa com alguns marcadores de exemplo.", file: "maps/map1.html" },
-  { id: "map2", title: "Mapa de Exemplo 2", description: "Outro mapa — duplique e edite para novos projetos.", file: "maps/map2.html" }
+  { id: "map1", title: "Mapa de Exemplo 1", description: "Mapa de expansão da ambiá.", file: "maps/map1.html" },
+  { id: "map2", title: "Mapa de Exemplo 2", description: "Outro mapa — duplique e edite para novos projetos (coloar imagem ou link do Qgis).", file: "maps/map2.html" }
 ];
 
 function renderMapsList() {
