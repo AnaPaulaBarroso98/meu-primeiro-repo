@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mapa de Exemplo 1</title>
+
+  <!-- CSS do Leaflet (biblioteca de mapas) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <!-- Seu CSS principal -->
+  <link rel="stylesheet" href="../css/styles.css"/>
+
+  <style>
+    /* altura do mapa para aparecer na tela */
+    #map { height: 60vh; border:1px solid #ccc; border-radius:6px; }
+    .map-container { margin-bottom:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mapa de Exemplo 1</h1>
+    <nav><a href="../index.html">Voltar</a> | <a href="../dashboard.html">Dashboard</a></nav>
+  </header>
+
+  <main>
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+
+    <section>
+      <h2>Explicação</h2>
+      <p>Este mapa mostra marcadores de exemplo. Mais tarde você pode carregar seus GeoJSON exportados do QGIS.</p>
+      <ul>
+        <li>Ponto A: exemplo</li>
+        <li>Ponto B: exemplo</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Script do Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // 1) Cria o mapa na div #map e posiciona com centro e zoom
+    const map = L.map('map').setView([-15.7801, -47.9292], 5); // lat, lng, zoom
+
+    // 2) Adiciona um tile layer (mapa base do OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // 3) Exemplos de marcadores com popups
+    L.marker([-15.7801, -47.9292]).addTo(map).bindPopup('Marcador: Brasil central');
+    L.marker([-23.5505, -46.6333]).addTo(map).bindPopup('São Paulo');
+    L.marker([-22.9083, -43.1964]).addTo(map).bindPopup('Rio de Janeiro');
+
+    // 4) Exemplo de como carregar GeoJSON (descomente quando tiver assets/geo/meu_mapa.geojson)
+    // fetch('../assets/geo/meu_mapa.geojson')
+    //   .then(r => r.json())
+    //   .then(data => {
+    //     function style(feature) { return { color: '#2c3e50', weight: 2, fillOpacity: 0.4 }; }
+    //     function onEachFeature(feature, layer) {
+    //       if (feature.properties) {
+    //         const props = Object.entries(feature.properties)
+    //           .map(([k,v]) => `<strong>${k}:</strong> ${v}`)
+    //           .join('<br>');
+    //         layer.bindPopup(props);
+    //       }
+    //     }
+    //     L.geoJSON(data, { style, onEachFeature }).addTo(map);
+    //   })
+    //   .catch(err => console.error(err));
+  </script>
+</body>
+</html>
