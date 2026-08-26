@@ -12,17 +12,39 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Portfólio de Mapas</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="dashboard/">Dashboard</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <!-- Substitua assets/images/logo.png pelo logo do seu repositório -->
+        <a href="index.html"><img src="assets/images/logo.png" alt="Logo da empresa" class="brand-logo"/></a>
+        <div class="brand-text">
+          <h1 class="brand-title">Ambiá</h1>
+          <p class="brand-sub">Monitoramento e Geotecnologias</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard/">Dashboard</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="intro">
-      <p>Aqui você encontra os mapas produzido para cada projeto. Clique em um mapa para ver detalhes e explicação.</p>
+    <!-- Nova seção SOBRE -->
+    <section id="about" class="about">
+      <div class="about-inner">
+        <h2>Sobre a empresa e os projetos</h2>
+        <p>
+          Somos a Ambiá — trabalhamos com monitoramento ambiental, inspeções de campo e
+          mapeamento geoespacial. Nesta seção apresentamos os projetos em que aplicamos
+          métodos de campo, análise espacial e recomendações técnicas.
+        </p>
+        <p>
+          Aqui você encontra descrições curtas dos projetos, objetivos e links para os mapas
+          e dashboards relacionados.
+        </p>
+      </div>
     </section>
 
     <section id="maps-list">
