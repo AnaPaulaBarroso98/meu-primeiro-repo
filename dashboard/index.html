@@ -3,45 +3,20 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>ArcGIS Dashboard</title>
+  <title>Área de Dashboards</title>
   <link rel="stylesheet" href="../css/styles.css"/>
-  <style>
-    /* Container sem padding e sem limite de largura */
-    .embed-container { width:100%; max-width:none; margin:0; padding:0; }
-
-    /* Iframe ocupa toda a largura disponível e quase toda a altura da viewport;
-       sem borda arredondada nem sombra para evitar faixas/brancos */
-    .arcgis-embed {
-      width:100%;
-      height:95vh;       /* ajuste para 90vh / 100vh se quiser */
-      border:0;
-      border-radius:0;
-      box-shadow:none;
-      display:block;
-    }
-
-    /* fallback visual */
-    .fallback { text-align:center; margin:0.5rem auto; color:#444; max-width:1100px; padding:0 1rem; }
-    .btn { display:inline-block; padding:0.5rem 0.9rem; background:#2c3e50; color:#fff; text-decoration:none; border-radius:4px; }
-  </style>
+  <style>.dash-list{max-width:900px;margin:1rem auto;padding:1rem}</style>
 </head>
 <body>
   <header>
-    <h1>ArcGIS Dashboard</h1>
-    <nav><a href="../index.html">Área de Dashboards</a> | <a href="../index.html">Home</a></nav>
+    <h1>Meus Dashboards</h1>
+    <nav><a href="../../index.html">Home</a> | <a href="../index.html">Área de Dashboards</a></nav>
   </header>
-
-  <main class="embed-container">
-    <iframe class="arcgis-embed"
-      src="https://www.arcgis.com/apps/dashboards/1b0f85c551f846b59212bd597fa460e4"
-      title="ArcGIS Dashboard"
-      loading="lazy"
-      allowfullscreen></iframe>
-
-    <div class="fallback">
-      <p>Se o dashboard não carregar aqui, abra em nova aba (faça login no ArcGIS se necessário):</p>
-      <p><a class="btn" href="https://www.arcgis.com/apps/dashboards/1b0f85c551f846b59212bd597fa460e4" target="_blank" rel="noopener noreferrer">Abrir dashboard no ArcGIS</a></p>
-    </div>
+  <main class="dash-list">
+    <ul>
+      <li><a href="local.html">Dashboard local (gráficos)</a> — gráficos gerados com Chart.js</li>
+      <li><a href="arcgis/">ArcGIS Dashboard (embed)</a> — pode pedir login</li>
+    </ul>
   </main>
 </body>
 </html>
