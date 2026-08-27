@@ -18,9 +18,23 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mapa de Exemplo 1</h1>
-    <nav><a href="../index.html">Voltar</a> | <a href="../dashboard.html">Dashboard</a></nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <a href="/AnaPaulaBarroso98/meu-primeiro-repo/index.html" class="brand-link">
+          <img src="/AnaPaulaBarroso98/meu-primeiro-repo/assets/images/logo.png" alt="Ambiá Consultoria" class="brand-logo"/>
+        </a>
+        <div class="brand-text">
+          <h1 class="brand-title">Ambiá</h1>
+          <p class="brand-sub">Consultoria e Engenharia</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="/AnaPaulaBarroso98/meu-primeiro-repo/index.html">Home</a>
+        <a href="/AnaPaulaBarroso98/meu-primeiro-repo/dashboard/">Dashboards</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -53,23 +67,6 @@
     L.marker([-15.7801, -47.9292]).addTo(map).bindPopup('Marcador: Brasil central');
     L.marker([-23.5505, -46.6333]).addTo(map).bindPopup('São Paulo');
     L.marker([-22.9083, -43.1964]).addTo(map).bindPopup('Rio de Janeiro');
-
-    // 4) Exemplo de como carregar GeoJSON (descomente quando tiver assets/geo/meu_mapa.geojson)
-    // fetch('../assets/geo/meu_mapa.geojson')
-    //   .then(r => r.json())
-    //   .then(data => {
-    //     function style(feature) { return { color: '#2c3e50', weight: 2, fillOpacity: 0.4 }; }
-    //     function onEachFeature(feature, layer) {
-    //       if (feature.properties) {
-    //         const props = Object.entries(feature.properties)
-    //           .map(([k,v]) => `<strong>${k}:</strong> ${v}`)
-    //           .join('<br>');
-    //         layer.bindPopup(props);
-    //       }
-    //     }
-    //     L.geoJSON(data, { style, onEachFeature }).addTo(map);
-    //   })
-    //   .catch(err => console.error(err));
   </script>
 </body>
 </html>
