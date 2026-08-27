@@ -1,7 +1,7 @@
 /* Variáveis de marca — altere aqui para suas cores */
 :root{
   --brand-primary: #D8D813;   /* cor do cabeçalho */
-  --brand-accent: #d9dfd3;    /* cor de destaque (ex.: ícones) */
+  --brand-accent: #525858;    /* cor de destaque (ex.: ícones) */
   --text-color: #525858;
   --muted: #666;
   --page-bg: #f7f7f7;
@@ -33,8 +33,8 @@ body {
 }
 .brand { display:flex; align-items:center; gap:0.9rem; text-decoration:none; color:#fff; }
 .brand-logo { width:56px; height:56px; object-fit:contain; border-radius:6px; background:#fff; padding:6px; }
-.brand-title { margin:0; font-size:1.25rem; line-height:1; }
-.brand-sub { margin:0; font-size:0.85rem; opacity:0.9; }
+.brand-title { margin:0; font-size:1.25rem; line-height:1; color:var(--brand-accent); }
+.brand-sub { margin:0; font-size:0.85rem; opacity:0.9; color:var(--brand-accent); }
 
 /* Navegação */
 .main-nav a { color:#fff; text-decoration:none; margin-left:1rem; font-weight:600; }
@@ -44,15 +44,15 @@ body {
 main { max-width:1100px; margin:1.25rem auto; background:var(--card-bg); padding:1rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
 
 /* Sobre / projetos */
-.about { margin-bottom:1rem; padding:1rem; background:linear-gradient(90deg, rgba(243,156,18,0.06), rgba(44,62,80,0.02)); border-radius:6px; }
-.about h2 { margin-top:0; color:var(--brand-primary); }
+.about { margin-bottom:1rem; padding:1rem; background:linear-gradient(90deg, rgba(216,216,19,0.06), rgba(82,88,88,0.02)); border-radius:6px; }
+.about h2 { margin-top:0; color:var(--brand-accent); }
 .about p { color:var(--muted); line-height:1.5; }
 
 /* Lista de mapas */
 #maps-list h2 { margin-top:1rem; }
 #maps-list ul { list-style:none; padding:0; margin:0; }
 #maps-list li { padding:0.6rem 0; border-bottom:1px solid #eee; display:block; }
-.map-link { color:var(--brand-primary); text-decoration:none; font-weight:600; }
+.map-link { color:var(--brand-accent); text-decoration:none; font-weight:600; }
 .map-desc { color:var(--muted); font-size:0.95rem; }
 
 /* Responsivo */
