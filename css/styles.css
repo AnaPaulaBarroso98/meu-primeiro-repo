@@ -1,8 +1,8 @@
 /* Variáveis de marca — altere aqui para suas cores */
 :root{
-  --brand-primary: #2c3e50;   /* cor do cabeçalho */
-  --brand-accent: #f39c12;    /* cor de destaque (ex.: ícones) */
-  --text-color: #222;
+  --brand-primary: #D8D813;   /* cor do cabeçalho */
+  --brand-accent: #d9dfd3;    /* cor de destaque (ex.: ícones) */
+  --text-color: #525858;
   --muted: #666;
   --page-bg: #f7f7f7;
   --card-bg: #fff;
