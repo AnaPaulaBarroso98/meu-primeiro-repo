@@ -19,8 +19,8 @@ body {
 
 /* Cabeçalho com logo */
 .site-header {
-  background: var(--brand-primary);
-  color: #fff;
+  background: var(--brand-primary) !important;
+  color: var(--brand-accent) !important;
   padding: 0.6rem 1rem;
 }
 .header-inner {
@@ -31,13 +31,13 @@ body {
   justify-content:space-between;
   gap:1rem;
 }
-.brand { display:flex; align-items:center; gap:0.9rem; text-decoration:none; color:#fff; }
-.brand-logo { width:56px; height:56px; object-fit:contain; border-radius:6px; background:#fff; padding:6px; }
+.brand { display:flex; align-items:center; gap:0.9rem; text-decoration:none; }
+.brand-logo { width:80px; height:80px; object-fit:contain; border-radius:8px; background:transparent; padding:4px; }
 .brand-title { margin:0; font-size:1.25rem; line-height:1; color:var(--brand-accent); }
 .brand-sub { margin:0; font-size:0.85rem; opacity:0.9; color:var(--brand-accent); }
 
 /* Navegação */
-.main-nav a { color:#fff; text-decoration:none; margin-left:1rem; font-weight:600; }
+.main-nav a { color:var(--brand-accent); text-decoration:none; margin-left:1rem; font-weight:600; }
 .main-nav a:hover { text-decoration:underline; }
 
 /* Conteúdo central */
